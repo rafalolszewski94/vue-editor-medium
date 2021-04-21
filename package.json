@@ -16,6 +16,11 @@
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
   },
+  "homepage": "https://github.com/rafalolszewski94/vue-editor-medium",
+  "bugs": {
+    "url" : "https://github.com/rafalolszewski94/vue-editor-medium/issues"
+  },
+  "license" : "SEE LICENSE IN LICENSE.md",
   "devDependencies": {
     "@babel/core": "^7.13.16",
     "@babel/preset-env": "^7.13.15",
