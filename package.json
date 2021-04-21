@@ -1,6 +1,6 @@
 {
   "name": "vue-editor-medium",
-  "version": "0.0.1-2",
+  "version": "0.0.1-3",
   "scripts": {
     "build": "rollup -c",
     "lint": "eslint --ext .js,.jsx,.vue,.ts,.tsx ./src",
@@ -18,9 +18,9 @@
   },
   "homepage": "https://github.com/rafalolszewski94/vue-editor-medium",
   "bugs": {
-    "url" : "https://github.com/rafalolszewski94/vue-editor-medium/issues"
+    "url": "https://github.com/rafalolszewski94/vue-editor-medium/issues"
   },
-  "license" : "SEE LICENSE IN LICENSE.md",
+  "license": "SEE LICENSE IN LICENSE.md",
   "devDependencies": {
     "@babel/core": "^7.13.16",
     "@babel/preset-env": "^7.13.15",
