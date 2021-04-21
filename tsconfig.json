@@ -2,13 +2,16 @@
   "compilerOptions": {
     "declarationDir": "lib",
     "target": "es5",
-    "module": "es2015",
+    "module": "esnext",
     "sourceMap": true,
     "declaration": true,
     "importHelpers": true,
     "strict": true,
     "experimentalDecorators": true,
-    "moduleResolution": "Node"
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
   },
   "include": [
     "src/**/*.ts",

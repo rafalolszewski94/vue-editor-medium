@@ -2,18 +2,22 @@
   "name": "vue-editor-medium",
   "version": "0.0.1-3",
   "scripts": {
+    "dev": "rollup -c -w",
     "build": "rollup -c",
     "lint": "eslint --ext .js,.jsx,.vue,.ts,.tsx ./src",
     "test": "echo \"No test specified\"",
     "predeploy": "npm run build",
     "deploy": "np",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "docs:dev": "vuepress dev docs --no-cache",
+    "docs:build": "vuepress build docs"
   },
   "main": "lib/vue-editor-medium.js",
   "module": "lib/vue-editor-medium.esm.js",
   "types": "lib/main.d.ts",
   "dependencies": {
     "core-js": "^3.6.5",
+    "medium-editor": "^5.23.3",
     "vue": "^2.6.11"
   },
   "homepage": "https://github.com/rafalolszewski94/vue-editor-medium",
@@ -26,6 +30,7 @@
     "@babel/preset-env": "^7.13.15",
     "@rollup/plugin-commonjs": "^18.0.0",
     "@rollup/plugin-node-resolve": "^11.2.1",
+    "@types/medium-editor": "^5.0.3",
     "@typescript-eslint/eslint-plugin": "^4.18.0",
     "@typescript-eslint/parser": "^4.18.0",
     "@vue/compiler-sfc": "^3.0.11",
@@ -36,22 +41,26 @@
     "eslint-plugin-vue": "^6.2.2",
     "husky": ">=6",
     "lint-staged": ">=10",
+    "postcss": "^8.2.10",
     "prettier": "^2.2.1",
     "rollup": "^2.45.2",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.0",
     "rollup-plugin-typescript2": "^0.30.0",
     "rollup-plugin-vue": "^6.0.0",
     "typescript": "~4.1.5",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "vuepress": "^1.8.2"
   },
   "peerDependencies": {
+    "medium-editor": "^5.23.3",
     "vue": "^2.6.12"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
   },
   "lint-staged": {
-    "*.{js,jsx,vue,ts,tsx}": "eslint --cache --fix"
+    "*.{js,jsx,vue,ts,tsx}": "eslint --fix"
   }
 }
