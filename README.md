@@ -1,24 +1,10 @@
-# vue-editor-medium
+# Vue Editor Medium
 
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
+## Installation
+```bash
+npm install vue-editor-medium
 ```
 
-### Compiles and minifies for production
+```bash
+yarn add vue-editor-medium
 ```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

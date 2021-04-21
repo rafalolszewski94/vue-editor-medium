@@ -12,6 +12,7 @@
   },
   "main": "lib/vue-editor-medium.js",
   "module": "lib/vue-editor-medium.esm.js",
+  "types": "lib/main.d.ts",
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
