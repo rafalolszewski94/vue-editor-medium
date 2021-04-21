@@ -1,6 +1,6 @@
 {
   "name": "vue-editor-medium",
-  "version": "0.0.1-3",
+  "version": "0.0.1",
   "scripts": {
     "dev": "rollup -c -w",
     "build": "rollup -c",
