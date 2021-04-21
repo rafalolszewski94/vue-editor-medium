@@ -1,9 +1,9 @@
-let IS_PROD = process.env.NODE_END === 'production';
+let IS_PROD = process.env.GITHUB_ACTIONS
 module.exports = {
   title: 'Vue Editor Medium',
   description: 'Vue 2 integration with Medium Editor',
 
-  base: IS_PROD ? '/vue-editor-medium/' : '',
+  base: IS_PROD ? '/vue-editor-medium/' : '/',
 
   markdown: {
     lineNumbers: true
