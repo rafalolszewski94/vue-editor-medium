@@ -1,7 +1,6 @@
 {
   "name": "vue-editor-medium",
   "version": "0.0.1-2",
-  "private": true,
   "scripts": {
     "build": "rollup -c",
     "lint": "eslint --ext .js,.jsx,.vue,.ts,.tsx ./src",
