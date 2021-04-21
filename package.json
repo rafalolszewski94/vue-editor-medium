@@ -1,12 +1,17 @@
 {
   "name": "vue-editor-medium",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build:lib": "vue-cli-service build --target lib",
+    "lint": "vue-cli-service lint",
+    "test": "echo \"No test specified\"",
+    "deploy": "np",
+    "postdeploy": "bs"
   },
+  "main": "dist/vue-editor-medium.umd.min.js",
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
@@ -27,6 +32,9 @@
     "prettier": "^2.2.1",
     "typescript": "~4.1.5",
     "vue-template-compiler": "^2.6.11"
+  },
+  "peerDependencies": {
+    "vue": "^2.6.12"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
