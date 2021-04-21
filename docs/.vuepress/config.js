@@ -1,6 +1,9 @@
 module.exports = {
   title: 'Vue Editor Medium',
   description: 'Vue 2 integration with Medium Editor',
+
+  base: '/vue-editor-medium/',
+
   markdown: {
     lineNumbers: true
   },
