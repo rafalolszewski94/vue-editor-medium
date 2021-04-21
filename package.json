@@ -10,7 +10,7 @@
     "deploy": "np",
     "prepare": "husky install",
     "docs:dev": "vuepress dev docs --no-cache",
-    "docs:build": "vuepress build docs"
+    "docs:build": "cross-env NODE_ENV=production vuepress build docs"
   },
   "main": "lib/vue-editor-medium.js",
   "module": "lib/vue-editor-medium.esm.js",
