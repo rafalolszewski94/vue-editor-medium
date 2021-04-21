@@ -6,7 +6,11 @@ actionText: Get Started →
 actionLink: /guide/
 ---
 
-<h4>Use editor</h4>
+<div class="shields">
+<img alt="npm" src="https://img.shields.io/npm/v/vue-editor-medium">
+</div>
+
+## Demo
 
 <component 
     v-if="dynamicComponent"
@@ -126,5 +130,10 @@ export default {
         display: block;
         margin: 4px 0;
     }
+}
+
+.shields {
+    display: flex;
+    justify-content: center;
 }
 </style>

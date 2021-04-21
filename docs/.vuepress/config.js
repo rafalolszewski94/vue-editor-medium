@@ -1,8 +1,9 @@
+let IS_PROD = process.env.NODE_END === 'production';
 module.exports = {
   title: 'Vue Editor Medium',
   description: 'Vue 2 integration with Medium Editor',
 
-  base: '/vue-editor-medium/',
+  base: IS_PROD ? '/vue-editor-medium/' : '',
 
   markdown: {
     lineNumbers: true
@@ -10,6 +11,7 @@ module.exports = {
 
   themeConfig: {
     lastUpdated: true,
+    searchPlaceholder: 'Search...',
 
     repo: 'rafalolszewski94/vue-editor-medium',
     docsRepo: 'rafalolszewski94/vue-editor-medium',
@@ -24,7 +26,7 @@ module.exports = {
     ],
 
     sidebar: [
-      '/guide/',
+      '/guide/'
     ]
   }
 }
